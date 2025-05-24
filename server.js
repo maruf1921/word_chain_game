@@ -167,7 +167,7 @@ io.on('connection', (socket) => {
         room.timer = setTimeout(() => {
             const loser = room.users[room.turn];
             io.to(roomId).emit('game_over', `${room.usernames[loser]} ran out of time!`);
-        }, 20000);
+        }, 60000);
     }
 
     async function aiMove(roomId) {

@@ -4,7 +4,7 @@ let roomId = '';
 let username = '';
 let isMyTurn = false;
 let timerInterval;
-let timeLeft = 20;
+let timeLeft = 60;
 let aiPlaying = false;
 
 function joinRoom() {
@@ -123,7 +123,7 @@ function rematch() {
 
 function resetTimer() {
     clearInterval(timerInterval);
-    timeLeft = 20;
+    timeLeft = 60;
     document.getElementById('timer').textContent = timeLeft;
 
     timerInterval = setInterval(() => {

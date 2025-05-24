@@ -1,0 +1,10 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#log p {
+    margin: 0.3em;
+    color: darkblue;
+}
